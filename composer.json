@@ -1,5 +1,5 @@
 {
-    "name": "getfokus/positionly",
+    "name": "nathanmarks/positionly",
     "description": "PHP library for positionly.com",
     "require": {
         "evert/oauth2": "dev-master"
