@@ -23,15 +23,15 @@ $api = new PositionlyApi($client);
 // get accounts
 $response = $api->call('/accounts');
 // get first account id
-$accountId = $response[0]['id'];
+$accountId = $response->getResult()[0]['id'];
 
 // get first website id
 $response = $api->call(sprintf('/accounts/%s/websites', $accountId));
-$websiteId = $response[0]['id'];
+$websiteId = $response->getResult()[0]['id'];
 
 // get first keyword id
 $response = $api->call(sprintf('/accounts/%s/websites/%s/keywords', $accountId, $websiteId));
-$keywordId = $response[0]['id'];
+$keywordId = $response->getResult()[0]['id'];
 
 $engineId = 43; // google polska
 

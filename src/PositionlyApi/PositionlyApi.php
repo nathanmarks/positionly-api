@@ -14,7 +14,7 @@ class PositionlyApi {
 	 */
 	private $client;
 	
-	private $apiUrl = "https://api.positionly.com/v1";
+	private $apiUrl = "https://api.positionly.com/v2";
 	
 	public function __construct(OAuth2Client $client) {
 		$this->setClient($client);
